@@ -1,0 +1,9 @@
+<h1>Show page to display one kitten</h1>
+<%= link_to 'Home', root_url %>
+
+<h3><%= @kitten.name %></h3>
+<%= link_to 'Edit', edit_kitten_path %>
+<br>
+<li>Age:<%= @kitten.age %></li>
+<li>Cuteness:<%= @kitten.cuteness %></li>
+<li>Softness:<%= @kitten.softness %></li>

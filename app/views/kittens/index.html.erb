@@ -1,0 +1,17 @@
+<h1>Index page to list all kittens</h1>
+<%= link_to 'Home', root_url %>
+<br>
+<br>
+<%= link_to 'Create Kittens', new_kitten_path %>
+
+<h3>Here are all your kittens!</h3>
+<% @kittens.each do |kitten| %>
+  <strong><%= link_to kitten.name, { :action => 'show', :id => kitten.id } %></strong>
+  <ul>
+    <li>Age:<%= kitten.age %></li>
+    <li>Cuteness:<%= kitten.cuteness %></li>
+    <li>Softness:<%= kitten.softness %></li>
+  <%= link_to 'Destroy Kitten', kitten, method: :delete, data: { confirm: "Are you sure?"} %>
+  </ul>
+
+<% end %>

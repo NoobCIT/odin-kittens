@@ -1,24 +1,3 @@
-# README
+This is a basic project to an introduction in APIs and is part of the The Odin Project curriculum.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The task is to quickly build a pure vanilla RESTful resource where the controller method will render data instead of HTML - a data producing API.

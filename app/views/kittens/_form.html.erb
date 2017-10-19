@@ -1,0 +1,24 @@
+<h3>Kitten creation form for the new and edit actions</h3>
+<p>
+  Rate the cuteness and softness from 1-10, 10 being the cutest/softest
+  and 1 being not cute and very hard!
+</p>
+
+<%#= form_for(@kitten, url: {action: 'create'}) do |f| %>
+<%= form_for(@kitten) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.label :cuteness %>
+  <%= f.number_field :cuteness %>
+
+  <%= f.label :softness %>
+  <%= f.number_field :softness %>
+
+  <%= f.submit 'Create my kitten!' %>
+
+<% end %>
